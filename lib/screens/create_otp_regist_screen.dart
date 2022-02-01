@@ -6,16 +6,16 @@ import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:im_stepper/stepper.dart';
-import 'package:zonedriver/app/constants.dart';
-import 'package:zonedriver/cubit/check_phone_cubit/check_phone_cubit.dart';
-import 'package:zonedriver/cubit/check_phone_cubit/check_phone_state.dart';
-import 'package:zonedriver/helpers/lang/language_constants.dart';
-import 'package:zonedriver/helpers/utils/myApplication.dart';
-import 'package:zonedriver/models/sign_up_data_model.dart';
-import 'package:zonedriver/screens/sign_up_files_upload_screen.dart';
-import 'package:zonedriver/widgets/btn_widget.dart';
-import 'package:zonedriver/widgets/global_appbar_widget.dart';
-import 'package:zonedriver/widgets/txtfield_widget.dart';
+import 'package:zone_driver/app/constants.dart';
+import 'package:zone_driver/cubit/check_phone_cubit/check_phone_cubit.dart';
+import 'package:zone_driver/cubit/check_phone_cubit/check_phone_state.dart';
+import 'package:zone_driver/helpers/lang/language_constants.dart';
+import 'package:zone_driver/helpers/utils/myApplication.dart';
+import 'package:zone_driver/models/sign_up_data_model.dart';
+import 'package:zone_driver/screens/sign_up_files_upload_screen.dart';
+import 'package:zone_driver/widgets/btn_widget.dart';
+import 'package:zone_driver/widgets/global_appbar_widget.dart';
+import 'package:zone_driver/widgets/txtfield_widget.dart';
 import 'login_screen.dart';
 
 class CreateOTPRegistScreen extends StatefulWidget {

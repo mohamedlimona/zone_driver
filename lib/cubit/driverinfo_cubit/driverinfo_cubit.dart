@@ -1,6 +1,6 @@
 import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
-import 'package:zonedriver/models/user_model.dart';
+import 'package:zone_driver/models/user_model.dart';
 import '../../repositories/auth.dart';
 import 'driverinfo_state.dart';
 

@@ -1,4 +1,4 @@
-import 'package:zonedriver/models/tracking_model.dart';
+import 'package:zone_driver/models/tracking_model.dart';
 
 abstract class TrackingState {}
 

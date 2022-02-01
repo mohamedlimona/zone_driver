@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:responsive_framework/responsive_wrapper.dart';
 import 'package:responsive_framework/utils/scroll_behavior.dart';
-import 'package:zonedriver/cubit/check_phone_cubit/check_phone_cubit.dart';
-import 'package:zonedriver/cubit/login_cubit/login_cubit.dart';
-import 'package:zonedriver/cubit/trackdeatils_cuibt/orderdetails_cubit.dart';
-import 'package:zonedriver/cubit/update_pass_cubit/update_pass_cubit.dart';
-import 'package:zonedriver/cubit/verification_cubit/verification_cubit.dart';
-import 'package:zonedriver/helpers/utils/sharedPreferenceClass.dart';
+import 'package:zone_driver/cubit/check_phone_cubit/check_phone_cubit.dart';
+import 'package:zone_driver/cubit/login_cubit/login_cubit.dart';
+import 'package:zone_driver/cubit/trackdeatils_cuibt/orderdetails_cubit.dart';
+import 'package:zone_driver/cubit/update_pass_cubit/update_pass_cubit.dart';
+import 'package:zone_driver/cubit/verification_cubit/verification_cubit.dart';
+import 'package:zone_driver/helpers/utils/sharedPreferenceClass.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:zonedriver/screens/splash_screen.dart';
+import 'package:zone_driver/screens/splash_screen.dart';
 import 'app/keys.dart';
 import 'cubit/changestatus_cubit/changestatus_cubit.dart';
 import 'cubit/forget_pass_cubit/forget_pass_cubit.dart';
@@ -20,23 +20,23 @@ import 'helpers/lang/language_constants.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await SharedPrefs().init();
-  runApp(const ZoneDriver());
+  runApp(const zone_driver());
 }
 
-class ZoneDriver extends StatefulWidget {
-  const ZoneDriver({Key? key}) : super(key: key);
+class zone_driver extends StatefulWidget {
+  const zone_driver({Key? key}) : super(key: key);
 
   static void setLocale(BuildContext context, Locale locale) {
-    _ZoneDriverState? state =
-        context.findAncestorStateOfType<_ZoneDriverState>();
+    _zone_driverState? state =
+        context.findAncestorStateOfType<_zone_driverState>();
     state!.setLocale(locale);
   }
 
   @override
-  State<ZoneDriver> createState() => _ZoneDriverState();
+  State<zone_driver> createState() => _zone_driverState();
 }
 
-class _ZoneDriverState extends State<ZoneDriver> {
+class _zone_driverState extends State<zone_driver> {
   Locale? _locale;
 
   void setLocale(Locale locale) {

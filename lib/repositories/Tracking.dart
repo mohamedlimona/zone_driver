@@ -4,9 +4,9 @@ import 'dart:convert';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:http/http.dart' as http;
 import 'dart:io';
-import 'package:zonedriver/app/constants.dart';
-import 'package:zonedriver/helpers/utils/sharedPreferenceClass.dart';
-import 'package:zonedriver/models/tracking_model.dart';
+import 'package:zone_driver/app/constants.dart';
+import 'package:zone_driver/helpers/utils/sharedPreferenceClass.dart';
+import 'package:zone_driver/models/tracking_model.dart';
 
 class TrackingRepo {
   Future<Trackingmodel?> getOrderDetails() async {

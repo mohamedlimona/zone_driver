@@ -1,4 +1,4 @@
-import 'package:zonedriver/models/user_model.dart';
+import 'package:zone_driver/models/user_model.dart';
 
 abstract class LoginState {}
 

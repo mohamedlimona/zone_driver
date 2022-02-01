@@ -4,7 +4,7 @@
 
 
 
-import 'package:zonedriver/models/check_phone_model.dart';
+import 'package:zone_driver/models/check_phone_model.dart';
 
 abstract class CheckPhoneState {}
 

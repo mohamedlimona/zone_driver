@@ -1,4 +1,4 @@
-import 'package:zonedriver/models/forget_pass_model.dart';
+import 'package:zone_driver/models/forget_pass_model.dart';
 
 abstract class ForgetPassState {}
 

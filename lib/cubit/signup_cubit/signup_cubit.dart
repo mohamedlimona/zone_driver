@@ -1,8 +1,8 @@
 import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
-import 'package:zonedriver/cubit/signup_cubit/signup_state.dart';
-import 'package:zonedriver/models/signup_model.dart';
-import 'package:zonedriver/repositories/auth.dart';
+import 'package:zone_driver/cubit/signup_cubit/signup_state.dart';
+import 'package:zone_driver/models/signup_model.dart';
+import 'package:zone_driver/repositories/auth.dart';
 
 
 class SignUpCubit extends Cubit<SignUpState> {

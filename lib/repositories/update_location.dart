@@ -1,9 +1,9 @@
 import 'dart:async';
 import 'dart:convert';
 import 'package:http/http.dart' as http;
-import 'package:zonedriver/app/keys.dart';
+import 'package:zone_driver/app/keys.dart';
 import 'dart:io';
-import 'package:zonedriver/helpers/utils/sharedPreferenceClass.dart';
+import 'package:zone_driver/helpers/utils/sharedPreferenceClass.dart';
 
 class UpdateLocationRepo {
   Future<bool?> updatelocation({double? longitude, double? latitude}) async {

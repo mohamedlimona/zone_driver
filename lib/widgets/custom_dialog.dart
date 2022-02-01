@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:zonedriver/app/constants.dart';
-import 'package:zonedriver/cubit/changestatus_cubit/changestatus_cubit.dart';
+import 'package:zone_driver/app/constants.dart';
+import 'package:zone_driver/cubit/changestatus_cubit/changestatus_cubit.dart';
 
 class CustomAlert extends StatelessWidget {
   @override

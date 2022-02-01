@@ -2,8 +2,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:lottie/lottie.dart';
-import 'package:zonedriver/app/constants.dart';
-import 'package:zonedriver/widgets/global_appbar_widget.dart';
+import 'package:zone_driver/app/constants.dart';
+import 'package:zone_driver/widgets/global_appbar_widget.dart';
 
 class PendingScreen extends StatefulWidget {
   @override

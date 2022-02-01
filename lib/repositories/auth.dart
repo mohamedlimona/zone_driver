@@ -4,17 +4,17 @@ import 'dart:io';
 
 import 'package:flutter/cupertino.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:zonedriver/app/constants.dart';
-import 'package:zonedriver/app/keys.dart';
-import 'package:zonedriver/helpers/utils/myApplication.dart';
-import 'package:zonedriver/helpers/utils/sharedPreferenceClass.dart';
-import 'package:zonedriver/models/check_phone_model.dart';
-import 'package:zonedriver/models/forget_pass_model.dart';
+import 'package:zone_driver/app/constants.dart';
+import 'package:zone_driver/app/keys.dart';
+import 'package:zone_driver/helpers/utils/myApplication.dart';
+import 'package:zone_driver/helpers/utils/sharedPreferenceClass.dart';
+import 'package:zone_driver/models/check_phone_model.dart';
+import 'package:zone_driver/models/forget_pass_model.dart';
 import 'package:http/http.dart' as http;
-import 'package:zonedriver/models/update_pass_model.dart';
-import 'package:zonedriver/models/user_model.dart';
-import 'package:zonedriver/models/verification_model.dart';
-import 'package:zonedriver/screens/pending_screen.dart';
+import 'package:zone_driver/models/update_pass_model.dart';
+import 'package:zone_driver/models/user_model.dart';
+import 'package:zone_driver/models/verification_model.dart';
+import 'package:zone_driver/screens/pending_screen.dart';
 
 
 class AuthRepo {

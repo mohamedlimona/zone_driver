@@ -1,7 +1,7 @@
 import 'package:bloc/bloc.dart';
-import 'package:zonedriver/cubit/trackdeatils_cuibt/orderdetails_state.dart';
-import 'package:zonedriver/models/tracking_model.dart';
-import 'package:zonedriver/repositories/Tracking.dart';
+import 'package:zone_driver/cubit/trackdeatils_cuibt/orderdetails_state.dart';
+import 'package:zone_driver/models/tracking_model.dart';
+import 'package:zone_driver/repositories/Tracking.dart';
 
 class TrackingCubit extends Cubit<TrackingState> {
   TrackingCubit() : super(TrackingInitial());

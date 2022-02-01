@@ -7,16 +7,16 @@ import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-import 'package:zonedriver/app/constants.dart';
-import 'package:zonedriver/app/map_utils.dart';
-import 'package:zonedriver/cubit/changestatus_cubit/changestatus_cubit.dart';
-import 'package:zonedriver/cubit/changestatus_cubit/changestatus_state.dart';
-import 'package:zonedriver/cubit/trackdeatils_cuibt/orderdetails_cubit.dart';
-import 'package:zonedriver/cubit/trackdeatils_cuibt/orderdetails_state.dart';
-import 'package:zonedriver/repositories/map_repo.dart';
-import 'package:zonedriver/repositories/update_location.dart';
+import 'package:zone_driver/app/constants.dart';
+import 'package:zone_driver/app/map_utils.dart';
+import 'package:zone_driver/cubit/changestatus_cubit/changestatus_cubit.dart';
+import 'package:zone_driver/cubit/changestatus_cubit/changestatus_state.dart';
+import 'package:zone_driver/cubit/trackdeatils_cuibt/orderdetails_cubit.dart';
+import 'package:zone_driver/cubit/trackdeatils_cuibt/orderdetails_state.dart';
+import 'package:zone_driver/repositories/map_repo.dart';
+import 'package:zone_driver/repositories/update_location.dart';
 import 'package:location/location.dart';
-import 'package:zonedriver/widgets/custom_dialog.dart';
+import 'package:zone_driver/widgets/custom_dialog.dart';
 
 class HomeScreen extends StatefulWidget {
   @override

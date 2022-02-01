@@ -1,12 +1,12 @@
 import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
-import 'package:zonedriver/cubit/verification_cubit/verification_state.dart';
-import 'package:zonedriver/helpers/utils/myApplication.dart';
-import 'package:zonedriver/models/verification_model.dart';
+import 'package:zone_driver/cubit/verification_cubit/verification_state.dart';
+import 'package:zone_driver/helpers/utils/myApplication.dart';
+import 'package:zone_driver/models/verification_model.dart';
 
-import 'package:zonedriver/repositories/auth.dart';
-import 'package:zonedriver/screens/create_new_pass_screen.dart';
-import 'package:zonedriver/screens/sign_up_data_screen.dart';
+import 'package:zone_driver/repositories/auth.dart';
+import 'package:zone_driver/screens/create_new_pass_screen.dart';
+import 'package:zone_driver/screens/sign_up_data_screen.dart';
 
 class VerificationCubit extends Cubit<VerificationState> {
   static BuildContext? context;

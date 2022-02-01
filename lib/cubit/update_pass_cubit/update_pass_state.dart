@@ -1,6 +1,6 @@
 
 
-import 'package:zonedriver/models/update_pass_model.dart';
+import 'package:zone_driver/models/update_pass_model.dart';
 
 abstract class UpdatePassState {}
 

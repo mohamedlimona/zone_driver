@@ -1,4 +1,4 @@
-import 'package:zonedriver/models/verification_model.dart';
+import 'package:zone_driver/models/verification_model.dart';
 
 abstract class VerificationState {}
 

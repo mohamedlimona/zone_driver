@@ -7,14 +7,14 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:im_stepper/stepper.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:zonedriver/app/constants.dart';
-import 'package:zonedriver/cubit/signup_cubit/signup_cubit.dart';
-import 'package:zonedriver/cubit/signup_cubit/signup_state.dart';
-import 'package:zonedriver/helpers/lang/language_constants.dart';
-import 'package:zonedriver/helpers/utils/myApplication.dart';
-import 'package:zonedriver/models/sign_up_data_model.dart';
-import 'package:zonedriver/widgets/btn_widget2.dart';
-import 'package:zonedriver/widgets/global_appbar_widget.dart';
+import 'package:zone_driver/app/constants.dart';
+import 'package:zone_driver/cubit/signup_cubit/signup_cubit.dart';
+import 'package:zone_driver/cubit/signup_cubit/signup_state.dart';
+import 'package:zone_driver/helpers/lang/language_constants.dart';
+import 'package:zone_driver/helpers/utils/myApplication.dart';
+import 'package:zone_driver/models/sign_up_data_model.dart';
+import 'package:zone_driver/widgets/btn_widget2.dart';
+import 'package:zone_driver/widgets/global_appbar_widget.dart';
 
 class SignUpScreenFilesUploadDetails extends StatefulWidget {
   final String screenType;

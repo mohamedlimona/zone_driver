@@ -7,16 +7,16 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:zonedriver/app/constants.dart';
-import 'package:zonedriver/cubit/login_cubit/login_cubit.dart';
-import 'package:zonedriver/cubit/login_cubit/login_state.dart';
-import 'package:zonedriver/helpers/lang/language_constants.dart';
-import 'package:zonedriver/helpers/utils/myApplication.dart';
-import 'package:zonedriver/screens/create_otp_regist_screen.dart';
-import 'package:zonedriver/screens/sign_up_data_screen.dart';
-import 'package:zonedriver/widgets/btn_widget.dart';
-import 'package:zonedriver/widgets/global_appbar_widget.dart';
-import 'package:zonedriver/widgets/txtfield_widget.dart';
+import 'package:zone_driver/app/constants.dart';
+import 'package:zone_driver/cubit/login_cubit/login_cubit.dart';
+import 'package:zone_driver/cubit/login_cubit/login_state.dart';
+import 'package:zone_driver/helpers/lang/language_constants.dart';
+import 'package:zone_driver/helpers/utils/myApplication.dart';
+import 'package:zone_driver/screens/create_otp_regist_screen.dart';
+import 'package:zone_driver/screens/sign_up_data_screen.dart';
+import 'package:zone_driver/widgets/btn_widget.dart';
+import 'package:zone_driver/widgets/global_appbar_widget.dart';
+import 'package:zone_driver/widgets/txtfield_widget.dart';
 import 'forget_pass_screen.dart';
 
 class LoginScreen extends StatefulWidget {

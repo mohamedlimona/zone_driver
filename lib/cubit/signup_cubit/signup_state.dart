@@ -1,6 +1,6 @@
 
 
-import 'package:zonedriver/models/signup_model.dart';
+import 'package:zone_driver/models/signup_model.dart';
 
 abstract class SignUpState {}
 

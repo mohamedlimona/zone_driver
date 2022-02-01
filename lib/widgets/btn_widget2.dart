@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:zonedriver/app/constants.dart';
+import 'package:zone_driver/app/constants.dart';
 
 // ignore: use_key_in_widget_constructors, must_be_immutable
 class BtnWidget2 extends StatelessWidget {

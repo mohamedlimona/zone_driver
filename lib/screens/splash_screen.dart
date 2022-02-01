@@ -2,11 +2,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:lottie/lottie.dart';
-import 'package:zonedriver/app/constants.dart';
-import 'package:zonedriver/helpers/utils/myApplication.dart';
-import 'package:zonedriver/helpers/utils/sharedPreferenceClass.dart';
-import 'package:zonedriver/screens/home_screen.dart';
-import 'package:zonedriver/screens/welcome_screen.dart';
+import 'package:zone_driver/app/constants.dart';
+import 'package:zone_driver/helpers/utils/myApplication.dart';
+import 'package:zone_driver/helpers/utils/sharedPreferenceClass.dart';
+import 'package:zone_driver/screens/home_screen.dart';
+import 'package:zone_driver/screens/welcome_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   @override

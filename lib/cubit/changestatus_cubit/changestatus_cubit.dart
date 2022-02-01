@@ -1,7 +1,7 @@
 // ignore_for_file: non_constant_identifier_names
 
 import 'package:bloc/bloc.dart';
-import 'package:zonedriver/repositories/changestatus_repo.dart';
+import 'package:zone_driver/repositories/changestatus_repo.dart';
 
 import 'changestatus_state.dart';
 

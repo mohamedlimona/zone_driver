@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:lottie/lottie.dart';
-import 'package:zonedriver/app/constants.dart';
+import 'package:zone_driver/app/constants.dart';
 
 class UnAssignedOrdersScreen extends StatefulWidget {
   @override

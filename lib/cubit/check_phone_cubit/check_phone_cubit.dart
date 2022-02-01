@@ -1,10 +1,10 @@
 import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
 
-import 'package:zonedriver/helpers/utils/myApplication.dart';
-import 'package:zonedriver/models/check_phone_model.dart';
-import 'package:zonedriver/repositories/auth.dart';
-import 'package:zonedriver/screens/verify_code_screen.dart';
+import 'package:zone_driver/helpers/utils/myApplication.dart';
+import 'package:zone_driver/models/check_phone_model.dart';
+import 'package:zone_driver/repositories/auth.dart';
+import 'package:zone_driver/screens/verify_code_screen.dart';
 
 import 'check_phone_state.dart';
 

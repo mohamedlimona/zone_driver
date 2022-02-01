@@ -3,8 +3,8 @@ import 'dart:async';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:zonedriver/app/constants.dart';
-import 'package:zonedriver/app/validations.dart';
+import 'package:zone_driver/app/constants.dart';
+import 'package:zone_driver/app/validations.dart';
 
 // ignore: use_key_in_widget_constructors
 class TxtFieldWidget extends StatefulWidget {

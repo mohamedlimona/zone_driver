@@ -8,8 +8,8 @@ import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:http/http.dart' as http;
 import 'package:location/location.dart';
 
-import 'package:zonedriver/models/disdur_model.dart';
-import 'package:zonedriver/models/mapapi_model.dart';
+import 'package:zone_driver/models/disdur_model.dart';
+import 'package:zone_driver/models/mapapi_model.dart';
 
 class MapServices {
   final Set<Marker> markers = <Marker>{};

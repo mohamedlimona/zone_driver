@@ -1,9 +1,9 @@
 // ignore_for_file: use_key_in_widget_constructors
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:zonedriver/app/constants.dart';
-import 'package:zonedriver/app/silvergrid_ratio.dart';
-import 'package:zonedriver/widgets/orders_card.dart';
+import 'package:zone_driver/app/constants.dart';
+import 'package:zone_driver/app/silvergrid_ratio.dart';
+import 'package:zone_driver/widgets/orders_card.dart';
 
 class OrderScreen extends StatefulWidget {
   @override

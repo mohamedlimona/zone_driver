@@ -2,11 +2,11 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:im_stepper/stepper.dart';
-import 'package:zonedriver/app/constants.dart';
-import 'package:zonedriver/helpers/utils/myApplication.dart';
-import 'package:zonedriver/models/sign_up_data_model.dart';
-import 'package:zonedriver/screens/sign_up_files_upload_details_screen.dart';
-import 'package:zonedriver/widgets/global_appbar_widget.dart';
+import 'package:zone_driver/app/constants.dart';
+import 'package:zone_driver/helpers/utils/myApplication.dart';
+import 'package:zone_driver/models/sign_up_data_model.dart';
+import 'package:zone_driver/screens/sign_up_files_upload_details_screen.dart';
+import 'package:zone_driver/widgets/global_appbar_widget.dart';
 
 class SignUpScreenFilesUpload extends StatefulWidget {
   final SignUpDataModel signUpDataModel;

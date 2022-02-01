@@ -1,12 +1,12 @@
 // ignore_for_file: use_key_in_widget_constructors
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
-import 'package:zonedriver/app/constants.dart';
-import 'package:zonedriver/helpers/utils/myApplication.dart';
-import 'package:zonedriver/screens/create_otp_regist_screen.dart';
-import 'package:zonedriver/screens/login_screen.dart';
-import 'package:zonedriver/screens/sign_up_data_screen.dart';
-import 'package:zonedriver/widgets/btn_widget.dart';
+import 'package:zone_driver/app/constants.dart';
+import 'package:zone_driver/helpers/utils/myApplication.dart';
+import 'package:zone_driver/screens/create_otp_regist_screen.dart';
+import 'package:zone_driver/screens/login_screen.dart';
+import 'package:zone_driver/screens/sign_up_data_screen.dart';
+import 'package:zone_driver/widgets/btn_widget.dart';
 
 class WelcomeScreen extends StatefulWidget {
   @override

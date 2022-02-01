@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:zonedriver/app/constants.dart';
+import 'package:zone_driver/app/constants.dart';
 
 class GlobalAppBar extends StatelessWidget with PreferredSizeWidget {
   final bool enableBackButton;

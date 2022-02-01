@@ -1,7 +1,7 @@
 import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
-import 'package:zonedriver/models/user_model.dart';
-import 'package:zonedriver/screens/home_screen.dart';
+import 'package:zone_driver/models/user_model.dart';
+import 'package:zone_driver/screens/home_screen.dart';
 import '../../helpers/utils/myApplication.dart';
 import '../../repositories/auth.dart';
 import 'login_state.dart';
