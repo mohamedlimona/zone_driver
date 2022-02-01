@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="250" height="270.003" viewBox="0 0 250 270.003">
+  <g id="Group_4191" data-name="Group 4191" transform="translate(-64 -153)">
+    <g id="Group_1396" data-name="Group 1396" transform="translate(11 84)">
+      <g id="Group_6" data-name="Group 6" transform="translate(285.269 69)">
+        <path id="Path_5" data-name="Path 5" d="M359.176,154.9a6.183,6.183,0,1,1,6.179,6.416A6.177,6.177,0,0,1,359.176,154.9Zm11.432,0a5.257,5.257,0,1,0-5.253,5.49A5.329,5.329,0,0,0,370.608,154.9Zm-7.8-3.541h2.473c1.734,0,2.687.548,2.687,2.186,0,1.165-.334,1.807-1.286,2.162l1.4,2.757h-1.212l-1.331-2.613h-1.592v2.613h-1.141Zm2.733,3.518c.906,0,1.31-.333,1.31-1.284s-.524-1.26-1.641-1.26h-1.285v2.543Z" transform="translate(-359.176 -148.485)" fill="#fef6f2"/>
+      </g>
+      <g id="Group_16" data-name="Group 16" transform="translate(53 79.766)">
+        <g id="Group_5" data-name="Group 5" transform="translate(15.274)">
+          <g id="Group_4" data-name="Group 4" transform="translate(0)">
+            <g id="Group_1" data-name="Group 1" transform="translate(114.431)">
+              <rect id="Rectangle_1" data-name="Rectangle 1" width="29.75" height="29.75" transform="translate(35.625 35.624)" fill="#fef6f2"/>
+              <path id="Path_1" data-name="Path 1" d="M274.033,163.629v101h101v-83.7a17.3,17.3,0,0,0-17.3-17.3Zm87.845,87.844h-74.69V176.783h74.69Z" transform="translate(-274.033 -163.629)" fill="#fef6f2"/>
+            </g>
+            <path id="Path_2" data-name="Path 2" d="M164.119,273.543v83.7a17.3,17.3,0,0,0,17.3,17.3h83.7v-101Zm87.844,87.845H229.494v-52.22h-29.75v52.22h-22.47V286.7h74.689Z" transform="translate(-164.119 -159.112)" fill="#fef6f2"/>
+            <g id="Group_3" data-name="Group 3" transform="translate(114.431 114.431)">
+              <g id="Group_2" data-name="Group 2" transform="translate(35.625 35.624)">
+                <rect id="Rectangle_2" data-name="Rectangle 2" width="22.695" height="4.123" fill="#fef6f2"/>
+              </g>
+              <path id="Path_3" data-name="Path 3" d="M274.033,273.543v101h83.7a17.3,17.3,0,0,0,17.3-17.3v-83.7Zm87.845,87.845h-74.69V286.7l67.636.051V335.76H309.657v3.158h52.22Z" transform="translate(-274.033 -273.543)" fill="#fef6f2"/>
+            </g>
+            <path id="Path_4" data-name="Path 4" d="M164.119,180.928v83.7h101v-101h-83.7A17.3,17.3,0,0,0,164.119,180.928Zm87.844,18.325h-.029l-37.6,29.781h37.632v22.439H177.273V229.034l38.517-29.781H177.273v-22.47h74.689Z" transform="translate(-164.119 -163.629)" fill="#fef6f2"/>
+          </g>
+        </g>
+        <text id="Redirect_the_Delivery_-_Closer_-_Faster" data-name="Redirect the Delivery - Closer - Faster" transform="translate(0 254.237)" fill="#fef6f2" font-size="13" font-family="Poppins-Bold, Poppins" font-weight="700"><tspan x="0" y="0">Redirect the Delivery - Closer - Faster</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>
