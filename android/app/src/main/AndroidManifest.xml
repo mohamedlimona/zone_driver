@@ -1,6 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.lundev.zone_driver.zone_driver">
-   <application
+    package="com.lundev.zonedriver">
+    <uses-permission android:name="android.permission.INTERNET" />   
+   <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+   <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>   <application
         android:label="zone_driver"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
@@ -30,5 +32,7 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
+            <meta-data android:name="com.google.android.geo.API_KEY"
+           android:value="AIzaSyDFndQnlb-ir_yCuGaZsDnFnyZWzuz5oPc"/>
     </application>
 </manifest>
