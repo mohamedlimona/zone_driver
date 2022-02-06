@@ -42,7 +42,7 @@ class Data {
   late final double userLongitude;
   late final int userRate;
   late final String paymentMethod;
-  late final double totalPayment;
+  late final dynamic totalPayment;
   late final User user;
   
   Data.fromJson(Map<String, dynamic> json){

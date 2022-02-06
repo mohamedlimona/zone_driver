@@ -1,4 +1,3 @@
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:fluttertoast/fluttertoast.dart';
@@ -10,7 +9,6 @@ import 'package:zone_driver/screens/sign_up_files_upload_screen.dart';
 import 'package:zone_driver/widgets/btn_widget.dart';
 import 'package:zone_driver/widgets/global_appbar_widget.dart';
 import 'package:zone_driver/widgets/txtfield_widget.dart';
-import 'login_screen.dart';
 
 class SignUpScreenData extends StatefulWidget {
   const SignUpScreenData({Key? key}) : super(key: key);
@@ -45,17 +43,15 @@ class _SignUpScreenDataState extends State<SignUpScreenData> {
     super.initState();
     confirmPassTextEditingController.addListener(() {
       setState(() {
-        matching = passTextEditingController.text.toString().trim() == confirmPassTextEditingController.text.toString().trim();
+        matching = passTextEditingController.text.toString().trim() ==
+            confirmPassTextEditingController.text.toString().trim();
       });
-
-
     });
     passTextEditingController.addListener(() {
       setState(() {
-        matching = passTextEditingController.text.toString().trim() == confirmPassTextEditingController.text.toString().trim();
+        matching = passTextEditingController.text.toString().trim() ==
+            confirmPassTextEditingController.text.toString().trim();
       });
-
-
     });
   }
 
@@ -171,7 +167,7 @@ class _SignUpScreenDataState extends State<SignUpScreenData> {
                     textInputType: TextInputType.visiblePassword,
                     pass: passTextEditingController.text.toString(),
                   ),
-                 /* TxtFieldWidget(
+                  /* TxtFieldWidget(
                     labelTxt: "National ID",
                     textEditingController: NationalIdTextEditingController,
                     isHasNextFocus: false,
@@ -181,7 +177,8 @@ class _SignUpScreenDataState extends State<SignUpScreenData> {
                   Align(
                     alignment: Alignment.centerRight,
                     child: Visibility(
-                      visible: matching && passTextEditingController.text.toString().isNotEmpty,
+                      visible: matching &&
+                          passTextEditingController.text.toString().isNotEmpty,
                       child: Row(
                         crossAxisAlignment: CrossAxisAlignment.center,
                         mainAxisAlignment: MainAxisAlignment.end,
@@ -189,45 +186,50 @@ class _SignUpScreenDataState extends State<SignUpScreenData> {
                           SvgPicture.asset(
                             "assets/images/valide_phone.svg",
                             fit: BoxFit.fill,
-                            height:30.0 ,
+                            height: 30.0,
                             width: 30.0,
                             color: const Color(0xFF80AF50),
                           ),
-                          const SizedBox(width: 10.0,),
+                          const SizedBox(
+                            width: 10.0,
+                          ),
                           const Text("Matching Password",
-                              style:
-                              TextStyle(color: Constants.HINT, fontSize: 10)),
+                              style: TextStyle(
+                                  color: Constants.HINT, fontSize: 10)),
                         ],
                       ),
                     ),
                   ),
                   const SizedBox(height: 20),
-                  const Text.rich(
-                    TextSpan(
-                       text: "By creating an account you agree\n",
-                      style: TextStyle(color: Constants.HINT, fontSize: 14,height: 1.5),
+                  const Text.rich(TextSpan(
+                      text: "By creating an account you agree\n",
+                      style: TextStyle(
+                          color: Constants.HINT, fontSize: 14, height: 1.5),
                       children: [
                         TextSpan(
                             text: "to the ",
-                            style: TextStyle(color: Constants.HINT, fontSize: 14),
+                            style:
+                                TextStyle(color: Constants.HINT, fontSize: 14),
                             children: [
                               TextSpan(
-                                  text: "privacy policy ",
-                                  style: TextStyle(color: Constants.primaryAppColor, fontSize: 14),
+                                text: "privacy policy ",
+                                style: TextStyle(
+                                    color: Constants.primaryAppColor,
+                                    fontSize: 14),
                               ),
                               TextSpan(
-                                  text: "and to the ",
-                                  style: TextStyle(color: Constants.HINT, fontSize: 14),
+                                text: "and to the ",
+                                style: TextStyle(
+                                    color: Constants.HINT, fontSize: 14),
                               ),
                               TextSpan(
                                 text: "terms of use",
-                                style: TextStyle(color: Constants.primaryAppColor, fontSize: 14),
+                                style: TextStyle(
+                                    color: Constants.primaryAppColor,
+                                    fontSize: 14),
                               ),
-                            ]
-                        )
-                      ]
-                    )
-                  ),
+                            ])
+                      ])),
                   const SizedBox(height: 25),
                   Center(
                     child: BtnWidget(
@@ -239,7 +241,8 @@ class _SignUpScreenDataState extends State<SignUpScreenData> {
                           if (check) {
                             SignUpDataModel signUpDataModel = SignUpDataModel(
                                 name: nameTextEditingController.text,
-                                nationalId: NationalIdTextEditingController.text,
+                                nationalId:
+                                    NationalIdTextEditingController.text,
                                 password: passTextEditingController.text,
                                 confirmPass:
                                     confirmPassTextEditingController.text,

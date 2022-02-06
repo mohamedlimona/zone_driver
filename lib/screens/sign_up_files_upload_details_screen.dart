@@ -54,8 +54,10 @@ class _SignUpScreenFilesUploadDetailsState
   List<String> paths = [];
 
   _imgFromDevide({ImageSource? imageSource}) async {
-    XFile? image =
-        await ImagePicker().pickImage(source: imageSource!, imageQuality: 50);
+    XFile? image = await ImagePicker().pickImage(
+      source: imageSource!,
+    );
+
     if (image != null) {
       setState(() {
         _image = image;
@@ -283,7 +285,8 @@ class _SignUpScreenFilesUploadDetailsState
                         fit: BoxFit.fill,
                       ),
                     )
-                  :  SvgPicture.asset("assets/images/icco.svg",width: size.width*0.16),
+                  : SvgPicture.asset("assets/images/icco.svg",
+                      width: size.width * 0.16),
             ),
             SizedBox(
               height: size.height * 0.03,

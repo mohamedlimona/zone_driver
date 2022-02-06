@@ -84,7 +84,7 @@ class MapServices {
     markers.add(Marker(
         markerId: MarkerId(markersLocation[0].toString()),
         position: markersLocation[0],
-        draggable: false,
+        draggable: true,
         zIndex: 2,
         flat: true,
         anchor: const Offset(1, 1),
@@ -116,9 +116,9 @@ class MapServices {
       zoom: 12,
     );
     final GoogleMapController controller = await controlle!.future;
-    // if (firsttim == 1) {
+    if (firsttim == 1) {
       controller.animateCamera(CameraUpdate.newCameraPosition(myPosition));
-    // }
-    // firsttim = 2;
+    }
+    firsttim = 2;
   }
 }

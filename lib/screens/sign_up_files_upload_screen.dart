@@ -134,10 +134,10 @@ class _SignUpScreenFilesUploadState extends State<SignUpScreenFilesUpload> {
             SizedBox(
               height: size.height * 0.05,
             ),
-            Row(children: const [
+            Row(children:  [
               Text(
-                'Welcome , Karim',
-                style: TextStyle(
+               "welcome, ${widget.signUpDataModel.name}",
+                style:const TextStyle(
                     fontWeight: FontWeight.w500, fontSize: 20.0, height: 2),
               ),
               Spacer()

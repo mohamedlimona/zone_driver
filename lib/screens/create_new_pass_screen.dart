@@ -1,7 +1,6 @@
 // ignore_for_file: use_key_in_widget_constructors
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:flutter_svg/svg.dart';
@@ -11,7 +10,6 @@ import 'package:zone_driver/cubit/update_pass_cubit/update_pass_cubit.dart';
 import 'package:zone_driver/cubit/update_pass_cubit/update_pass_state.dart';
 import 'package:zone_driver/helpers/lang/language_constants.dart';
 import 'package:zone_driver/helpers/utils/myApplication.dart';
-import 'package:zone_driver/models/update_pass_model.dart';
 import 'package:zone_driver/widgets/btn_widget.dart';
 import 'package:zone_driver/widgets/global_appbar_widget.dart';
 import 'package:zone_driver/widgets/txtfield_widget.dart';
@@ -31,16 +29,35 @@ class _CreateNewPassScreenState extends State<CreateNewPassScreen>
       TextEditingController();
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
   bool obscure = true;
-  Widget _child = Container();
+  bool matching = false;
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    confirmPassTextEditingController.addListener(() {
+      setState(() {
+        matching = passTextEditingController.text.toString().trim() ==
+            confirmPassTextEditingController.text.toString().trim();
+      });
+    });
+    passTextEditingController.addListener(() {
+      setState(() {
+        matching = passTextEditingController.text.toString().trim() ==
+            confirmPassTextEditingController.text.toString().trim();
+      });
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
     return Scaffold(
       resizeToAvoidBottomInset: false,
+      backgroundColor: Constants.whiteAppColor,
       appBar: GlobalAppBar(
         enableBackButton: false,
         height: size.height * 0.3,
-        child: SvgPicture.asset("assets/images/logo.svg",
+        child: SvgPicture.asset("assets/images/Logo Icon.svg",
             height: size.height * 0.21),
       ),
       body: Padding(
@@ -74,21 +91,6 @@ class _CreateNewPassScreenState extends State<CreateNewPassScreen>
                   type: "signup",
                 ),
                 const SizedBox(height: 5),
-                /*Row(
-                  children: [
-                    Column(
-                      children: [
-                        Container(
-                          height: 3.5,
-                          width: 50,
-                          decoration: BoxDecoration(
-                              color: Constants.primaryAppColor,
-                              borderRadius: BorderRadius.circular(5.0)),
-                        )
-                      ],
-                    )
-                  ],
-                ),*/
                 const SizedBox(height: 20),
                 const Align(
                   alignment: Alignment.centerLeft,
@@ -102,19 +104,23 @@ class _CreateNewPassScreenState extends State<CreateNewPassScreen>
                   textInputType: TextInputType.visiblePassword,
                   pass: passTextEditingController.text.toString(),
                 ),
-                Align(
-                  alignment: Alignment.centerRight,
-                  child: Row(
-                    children: [
-                      SvgPicture.asset(
-                        "assets/images/match.svg",
-                        fit: BoxFit.fill,
-                        color: const Color(0xFF80AF50),
-                      ),
-                      const Text("Matching Password",
-                          style:
-                              TextStyle(color: Constants.HINT, fontSize: 10)),
-                    ],
+                Visibility(
+                  visible: matching &&
+                      passTextEditingController.text.toString().isNotEmpty,
+                  child: Align(
+                    alignment: Alignment.centerRight,
+                    child: Row(
+                      children: [
+                        SvgPicture.asset(
+                          "assets/images/match.svg",
+                          fit: BoxFit.fill,
+                          color: const Color(0xFF80AF50),
+                        ),
+                        const Text("Matching Password",
+                            style:
+                                TextStyle(color: Constants.HINT, fontSize: 10)),
+                      ],
+                    ),
                   ),
                 ),
                 SizedBox(height: size.height * 0.04),
@@ -173,21 +179,4 @@ class _CreateNewPassScreenState extends State<CreateNewPassScreen>
       ),
     );
   }
-
-  /*void onLoaded(UpdatePassResponse updatePassResponse) {
-
-    if (updatePassResponse.status == true &&
-            updatePassResponse.message == "done") {
-          // ignore: avoid_print
-          print("updatePassResponse====>  success");
-
-        } else {
-          // ignore: avoid_print
-          print(" failed");
-          // ignore: avoid_print
-          print("status====> ${updatePassResponse.status.toString()}");
-          // ignore: avoid_print
-          print("message====> ${updatePassResponse.message.toString()}");
-        }
-  }*/
 }

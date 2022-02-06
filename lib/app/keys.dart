@@ -1,5 +1,6 @@
 
-const String Apikey = 'https://restaurant-test.lun.sa/api';
+// const String Apikey = 'https://restaurant-test.lun.sa/api';
+const String Apikey = 'https://test.talabatcom.sa/Admin/public/api';
 const String mapsKey = '';
 const String apiAuthKey = 'Bearer';
 const String langKey = 'langKey';

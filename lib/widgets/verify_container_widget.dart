@@ -27,37 +27,55 @@ class _VerifyContainerWidgetState extends State<VerifyContainerWidget> {
           SizedBox(
             width: 40,
             height: 40,
-            child: TextFormField(
-              autofocus: true,
-              controller: widget.textEditingController,
-              focusNode: widget.focusNode,
-              keyboardType: TextInputType.number,
-              cursorColor: Constants.primaryAppColor,
-              onChanged: widget.onChanged,
-
-              inputFormatters: [
-                LengthLimitingTextInputFormatter(1),
-                // ignore: deprecated_member_use
-                // WhitelistingTextInputFormatter.digitsOnly,
-              ],
-              style: const TextStyle(fontSize: 20),
-              decoration: InputDecoration(
-
-                  contentPadding: const EdgeInsets.only(left: 15),
-                  enabledBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(5.0),
-                      borderSide: BorderSide(color: Constants.bord)),
-                  focusedBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(5.0),
-                      borderSide: BorderSide(color: Constants.bord))),
+            child: RawKeyboardListener(
+              focusNode: FocusNode(),
+              onKey: (event) {
+                if (event.logicalKey == LogicalKeyboardKey.backspace) {
+                  // here you can check if textfield is focused
+                  FocusScope.of(context).previousFocus();
+                }
+              },
+              child: TextFormField(
+                autofocus: true,
+                controller: widget.textEditingController,
+                focusNode: widget.focusNode,
+                keyboardType: TextInputType.number,
+                cursorColor: Constants.primaryAppColor,
+                onChanged: widget.onChanged,
+                inputFormatters: [
+                  LengthLimitingTextInputFormatter(1),
+                  // ignore: deprecated_member_use
+                ],
+                style: const TextStyle(fontSize: 20),
+                decoration: InputDecoration(
+                    filled: true,
+                    fillColor: widget.textEditingController.text.isNotEmpty
+                        ? Constants.bord.withOpacity(0.3)
+                        : Colors.white,
+                    contentPadding: const EdgeInsets.only(left: 15),
+                    enabledBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(5.0),
+                        borderSide: BorderSide(
+                            color: widget.textEditingController.text.isNotEmpty
+                                ? Colors.white
+                                : Constants.bord)),
+                    focusedBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(5.0),
+                        borderSide: BorderSide(
+                            color: widget.textEditingController.text.isNotEmpty
+                                ? Colors.white
+                                : Constants.bord))),
+              ),
             ),
           ),
-          const SizedBox(height: 4),
+          const SizedBox(height: 10),
           Container(
             width: 40,
             height: 2.5,
             decoration: BoxDecoration(
-                color: Constants.primaryAppColor,
+                color: widget.textEditingController.text.isNotEmpty
+                    ? Colors.green
+                    : Constants.primaryAppColor,
                 borderRadius: BorderRadius.circular(20.0)),
           ),
         ],

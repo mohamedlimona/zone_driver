@@ -4,6 +4,7 @@ import 'package:fluttertoast/fluttertoast.dart';
 import 'package:http/http.dart' as http;
 import 'dart:io';
 import 'package:zone_driver/app/constants.dart';
+import 'package:zone_driver/app/keys.dart';
 import 'package:zone_driver/helpers/utils/sharedPreferenceClass.dart';
 
 class ChangestatusRepo {
@@ -11,7 +12,7 @@ class ChangestatusRepo {
     try {
       var response = await http.put(
         Uri.parse(
-            'https://restaurant-test.lun.sa/api/orders/${order_id!}?api_token=${sharedPrefs.token}&order_status_id=${status_id!}&note'),
+            '$Apikey/orders/${order_id!}?api_token=${sharedPrefs.token}&order_status_id=${status_id!}&note'),
         headers: {'Accept': 'application/json'},
       );
       Map<String, dynamic> responsemap = json.decode(response.body);
